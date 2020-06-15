@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O2.Business.BackendForFront", "O2.Business.BackendForFront.csproj", "{8A6537E7-5CCB-4BFF-A44B-7F20B8849089}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A6537E7-5CCB-4BFF-A44B-7F20B8849089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A6537E7-5CCB-4BFF-A44B-7F20B8849089}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A6537E7-5CCB-4BFF-A44B-7F20B8849089}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A6537E7-5CCB-4BFF-A44B-7F20B8849089}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F295A2B2-FB3A-4D53-AE7C-EC696C4A42B9}
+	EndGlobalSection
+EndGlobal
