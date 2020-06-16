@@ -6,6 +6,7 @@
         | <router-link to="/about">About</router-link>
         <template v-if="isUserLoggedIn">
         | <router-link to="/certificates">Certificates</router-link>
+        | <a v-bind:href="logoutUrl">logout</a>
         </template>
         <template v-else>
         | <a v-bind:href="loginUrl">Login</a>
@@ -40,6 +41,12 @@ export default class App extends Vue {
 
   public get loginUrl(): string {
     return `/api/auth/login?returnUrl=${window.location.href}`;
+  }
+
+  public logoutUrl(): void {
+     localStorage.removeItem('token');
+    //  localStorage.removeItem('.AspNetCore.Antiforgery.fc-8dmY7F-A');
+    //  localStorage.removeItem('.AspNetCore.Cookies');
   }
 }
 </script>

@@ -12,5 +12,5 @@ export const mutations: MutationTree<AuthState> = {
         state.loggedIn = false;
         state.loaded = true;
         state.username = null;
-    }
+    },
 };
