@@ -8,7 +8,7 @@ import { CertificateViewModel } from '@/components/certificates/models';
 import { types } from '@/store/modules/certificates/actions';
 import { State, namespace } from 'vuex-class';
 
-const groupsModule = namespace('certificates');
+const certificatesModule = namespace('certificates');
 
 @Component({
   components: {
@@ -16,12 +16,12 @@ const groupsModule = namespace('certificates');
   }
 })
 export default class Certificates extends Vue {
-  @groupsModule.State('certificates') private certificates!: CertificateViewModel[];
-  @groupsModule.Action('loadGroups') private loadGroups!: () => void;
+  @certificatesModule.State('certificates') private certificates!: CertificateViewModel[];
+  @certificatesModule.Action('loadCertificates') private loadCertificates!: () => void;
 
   public mounted(): void {
     // this.$store.dispatch(types.LOAD_GROUPS); // another way of doing the same
-    this.loadGroups();
+    this.loadCertificates();
   }
 
   private onUpdate(certificate: CertificateViewModel): void {

@@ -5,7 +5,7 @@
         <router-link to="/">Home</router-link>
         | <router-link to="/about">About</router-link>
         <template v-if="isUserLoggedIn">
-        | <router-link to="/groups">Groups</router-link>
+        | <router-link to="/certificates">Certificates</router-link>
         </template>
         <template v-else>
         | <a v-bind:href="loginUrl">Login</a>

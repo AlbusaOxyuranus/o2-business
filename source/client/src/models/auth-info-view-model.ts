@@ -1,7 +1,7 @@
-import { AuthInfoViewModel } from './auth-info-view-model';
+import { UserInfoViewModel } from './user-info-view-model';
 
 export interface AuthInfoViewModel {
         loggedIn: boolean;
         loaded: boolean;
-        user: AuthInfoViewModel | null;
+        user: UserInfoViewModel | null;
 }

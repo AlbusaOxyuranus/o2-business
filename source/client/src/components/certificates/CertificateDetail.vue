@@ -1,31 +1,31 @@
 <template>
   <span v-if="isInEditMode">
-    <input v-model="editableGroup.name" placeholder="Enter a name for the group">
+    <input v-model="editableGroup.name" placeholder="Enter a name for the certificate">
     <button v-on:click="save()">Save</button>
     <button v-on:click="discard()">Discard</button>
     <button v-on:click="remove()">Remove</button>
   </span>
   <span v-else>
-    {{ group.name }}
+    {{ certificate.name }}
     <button v-on:click="edit()">Edit</button>
   </span>
 </template>
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
-import { GroupViewModel } from './models';
+import { CertificateViewModel } from './models';
 
 @Component({
   components: {}
 })
-export default class GroupDetail extends Vue {
-  @Prop() private group!: GroupViewModel;
+export default class CertificateDetail extends Vue {
+  @Prop() private certificate!: CertificateViewModel;
   private isInEditMode: boolean = false;
-  private editableGroup: GroupViewModel | null = null;
+  private editableGroup: CertificateViewModel | null = null;
 
   private edit(): void {
     this.isInEditMode = true;
-    this.editableGroup = { ...this.group };
+    this.editableGroup = { ...this.certificate };
   }
   private save(): void {
       this.$emit('update', this.editableGroup);

@@ -17,9 +17,9 @@ const router = new Router({
       component: Home
     },
     {
-      path: '/groups',
-      name: 'groups',
-      component: () => import('./views/Groups.vue'),
+      path: '/certificates',
+      name: 'certificates',
+      component: () => import('./views/Certificates.vue'),
       meta: { requiresAuthentication: true }
     },
     {

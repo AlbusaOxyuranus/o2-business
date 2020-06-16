@@ -1,3 +1,3 @@
-export interface AuthInfoViewModel {
+export interface UserInfoViewModel {
     name: string;
 }
