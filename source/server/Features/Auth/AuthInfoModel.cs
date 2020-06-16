@@ -1,4 +1,4 @@
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.Features.Auth
+namespace O2.Business.BackendForFront.Features.Auth
 {
     public class AuthInfoModel
     {

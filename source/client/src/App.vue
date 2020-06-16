@@ -24,7 +24,7 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import { State, namespace } from 'vuex-class';
 import { AuthInfoViewModel } from './models/auth-info-view-model';
-
+import axios from 'axios';
 const authModule = namespace('auth');
 
 @Component
@@ -45,6 +45,7 @@ export default class App extends Vue {
 
   public logoutUrl(): void {
      localStorage.removeItem('token');
+     axios.
     //  localStorage.removeItem('.AspNetCore.Antiforgery.fc-8dmY7F-A');
     //  localStorage.removeItem('.AspNetCore.Cookies');
   }

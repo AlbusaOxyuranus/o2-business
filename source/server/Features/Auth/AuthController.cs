@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Antiforgery;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.Features.Auth
+namespace O2.Business.BackendForFront.Features.Auth
 {
     [Route("auth")]
     public class AuthController : ControllerBase
@@ -33,6 +33,17 @@ namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.Features.Auth
         [HttpGet]
         [Route("login")]
         public IActionResult Login([FromQuery] string returnUrl)
+        {
+            /*
+             * No need to do anything here, as the auth middleware will take care of redirecting to IdentityServer4.
+             * When the user is authenticated and gets back here, we can redirect to the desired url. 
+             */
+            return Redirect(string.IsNullOrWhiteSpace(returnUrl) ? "/" : returnUrl);
+        }
+        
+        [HttpGet]
+        [Route("logout")]
+        public IActionResult Logout([FromQuery] string returnUrl)
         {
             /*
              * No need to do anything here, as the auth middleware will take care of redirecting to IdentityServer4.

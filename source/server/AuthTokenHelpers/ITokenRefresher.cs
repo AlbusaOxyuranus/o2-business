@@ -1,7 +1,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.AuthTokenHelpers
+namespace O2.Business.BackendForFront.AuthTokenHelpers
 {
     /// <summary>
     /// Provides an easy way to ensure the user's access token is up to date. 

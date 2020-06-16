@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.AuthTokenHelpers
+namespace O2.Business.BackendForFront.AuthTokenHelpers
 {
     public class AccessTokenHttpMessageHandler : DelegatingHandler
     {

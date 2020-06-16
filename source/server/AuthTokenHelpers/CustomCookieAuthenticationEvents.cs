@@ -1,12 +1,9 @@
-using System.Net;
-using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore;
 
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.AuthTokenHelpers
+namespace O2.Business.BackendForFront.AuthTokenHelpers
 {
     public class CustomCookieAuthenticationEvents : CookieAuthenticationEvents
     {

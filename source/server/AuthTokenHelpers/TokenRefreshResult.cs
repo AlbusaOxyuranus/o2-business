@@ -1,4 +1,4 @@
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.AuthTokenHelpers
+namespace O2.Business.BackendForFront.AuthTokenHelpers
 {
     public class TokenRefreshResult
     {

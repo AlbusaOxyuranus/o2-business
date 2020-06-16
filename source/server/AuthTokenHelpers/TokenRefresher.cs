@@ -3,13 +3,10 @@ using System.Globalization;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using IdentityModel;
 using IdentityModel.Client;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace CodingMilitia.PlayBall.WebFrontend.BackForFront.Web.AuthTokenHelpers
+namespace O2.Business.BackendForFront.AuthTokenHelpers
 {
     /// <inheritdoc />
     public class TokenRefresher : ITokenRefresher
