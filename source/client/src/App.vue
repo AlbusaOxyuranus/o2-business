@@ -44,8 +44,8 @@ export default class App extends Vue {
   }
 
   public logoutUrl(): void {
-     localStorage.removeItem('token');
-     axios.
+    //  localStorage.removeItem('token');
+    //  axios.
     //  localStorage.removeItem('.AspNetCore.Antiforgery.fc-8dmY7F-A');
     //  localStorage.removeItem('.AspNetCore.Cookies');
   }
